@@ -1,5 +1,9 @@
 import java.nio.file.Files
 
+ext.modImpl = { dep -> dependencies.modImplementation(dep) }
+ext.modLr = { dep -> dependencies.modLocalRuntime(dep) }
+ext.modCo = { dep -> dependencies.modCompileOnly(dep) }
+
 plugins {
     id "java"
 }
